@@ -54,7 +54,7 @@ python3 bh-toolset.py --delete
 
 ## Notes
 
-Some attributes like `owner` and `highvalue` have changed in BloodHound Community. You will have to modify those manually (for now). Ex:
+Some attributes like `owned` and `highvalue` have changed in BloodHound Community. You will have to modify those manually (for now). Ex:
 
 - `MATCH (m:User) WHERE m.owned=TRUE RETURN m` is now `MATCH (m:User) WHERE m.system_tags =~ '.*owned*.' RETURN m`
 - see more examples in `new_customqueries.json`
