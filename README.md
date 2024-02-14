@@ -20,7 +20,7 @@ The script uses the following environment variables, which should be set in a `.
 
 - `BHE_DOMAIN`: The domain of the BHE API.
 - `BHE_PORT`: The port of the BHE API.
-- `BHE_SCHEME`: The scheme of the BHE API (http or https). - BHE_TOKEN_ID: The token ID for the BHE API.
+- `BHE_SCHEME`: The scheme of the BHE API (http or https).
 - `BHE_TOKEN_KEY`: The token key for the BHE API.
 - `BHE_TOKEN_SECRET`: The token secret for the BHE API.
 
