@@ -1,6 +1,6 @@
 # BloodHound_CustomQueries_Toolset
 
-Tool to import your customqueries from [BloodHound "Legacy"](https://github.com/BloodHoundAD/BloodHound) to [BloodHound "Community"](https://github.com/SpecterOps/BloodHound).
+Tool to import your customqueries for [BloodHound "Legacy"](https://github.com/BloodHoundAD/BloodHound) to [BloodHound "Community"](https://github.com/SpecterOps/BloodHound).
 
 note: on linux/kali, your customqueries.json file for BloodHound Legacy is located at `~/.config/bloodhound/customqueries.json`
 
@@ -22,6 +22,7 @@ The script uses the following environment variables, which should be set in a `.
 - `BHE_PORT`: The port of the BHE API.
 - `BHE_SCHEME`: The scheme of the BHE API (http or https). - BHE_TOKEN_ID: The token ID for the BHE API.
 - `BHE_TOKEN_KEY`: The token key for the BHE API.
+- `BHE_TOKEN_SECRET`: The token secret for the BHE API.
 
 More details here: [BloodHound API](https://support.bloodhoundenterprise.io/hc/en-us/articles/11311053342619-Working-with-the-BloodHound-API)
 
@@ -32,8 +33,8 @@ python bh-toolset.py [-h] [-i [FILE]] [--new [NEW_FILE]] [--delete]
 ```
 
 - `-h`: Show the help message and exit.
-- `-i`: Import old customqueries.json file. (default: customqueries.json).
-- `--new`: New customqueries.json file to import from. (default: new_customqueries.json).
+- `-i`: Import customqueries.json file from legacy format. (default: customqueries.json).
+- `--new`: import customqueries already format for the new version. (default: new_customqueries.json).
 - `--delete`: Delete all saved queries.
 
 ### Example

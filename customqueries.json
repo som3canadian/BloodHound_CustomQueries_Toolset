@@ -1,0 +1,26 @@
+{
+  "queries": [
+    {
+      "name": "Password not required",
+      "category": "1 - 🔥 Custom Queries Legacy",
+      "queryList": [
+        {
+          "final": true,
+          "query": "MATCH p = (d:Domain)-[r:Contains*1..]->(u:User {passwordnotreqd: true}) RETURN p",
+          "allowCollapse": true
+        }
+      ]
+    },
+    {
+      "name": "Read gMSA",
+      "category": "1 - 🔥 Custom Queries Legacy",
+      "queryList": [
+        {
+          "final": true,
+          "query": "MATCH p=()-[r:ReadGMSAPassword]->() RETURN p",
+          "allowCollapse": true
+        }
+      ]
+    }
+  ]
+}
