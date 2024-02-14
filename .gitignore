@@ -1,0 +1,5 @@
+.DS_Store
+queries-toimport.json
+__pycache__
+.env
+customqueries-old.json
